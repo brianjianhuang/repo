@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AdminLTE | General UI</title>
+        <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+        <!-- bootstrap 3.0.2 -->
+        <link href="../../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="../../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <!-- Ionicons -->
+        <link href="../../css/ionicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Theme style -->
+        <link href="../../css/AdminLTE.css" rel="stylesheet" type="text/css" />
+ 
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="skin-blue">
+        <!-- header logo: style can be found in header.less -->
+        <header class="header">
+            <a href="../../index.html" class="logo">
+                <!-- Add the class icon to your logo image or logo icon to add the margining -->
+                iManage
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top" role="navigation">
+                <!-- Sidebar toggle button-->
+                <a href="#" class="navbar-btn sidebar-toggle" data-toggle="offcanvas" role="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <div class="navbar-right">
+                    <ul class="nav navbar-nav">
+                        <!-- Messages: style can be found in dropdown.less-->
+ 
+                        <!-- Notifications: style can be found in dropdown.less -->
+
+
+                        <!-- User Account: style can be found in dropdown.less -->
+                        <li class="dropdown user user-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span>Jane Doe <i class="caret"></i></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <!-- User image -->
+                                <li class="user-header bg-light-blue">
+                                    <img src="../../img/avatar3.png" class="img-circle" alt="User Image" />
+                                    <p>
+                                        Jane Doe - Web Developer
+                                        
+                                    </p>
+                                </li>
+ 
+                                <!-- Menu Footer-->
+                                <li class="user-footer">
+                                    <div class="pull-left">
+                                        <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                    </div>
+                                    <div class="pull-right">
+                                        <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="wrapper row-offcanvas row-offcanvas-left">
+            <!-- Left side column. contains the logo and sidebar -->
+            <aside class="left-side sidebar-offcanvas">
+                <!-- sidebar: style can be found in sidebar.less -->
+                <section class="sidebar">
+                    <!-- Sidebar user panel -->
+ 
+                    <!-- search form -->
+ 
+                    <!-- /.search form -->
+                    <!-- sidebar menu: : style can be found in sidebar.less -->
+                    <ul class="sidebar-menu">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-th"></i> <span>Worksteams</span> <small class="badge pull-right bg-green">new</small>
+                            </a>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-bar-chart-o"></i>
+                                <span>Scorecards</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="../UI/scorecard.html"><i class="fa fa-angle-double-right"></i> iWatch</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> iManage</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> iRepors</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview active">
+                            <a href="#">
+                                <i class="fa fa-laptop"></i>
+                                <span>Resources</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="active"><a href="#"><i class="fa fa-angle-double-right"></i> General</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Vacations</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> Visibility</a></li>
+ 
+                            </ul>
+                        </li>
+                        <li class="treeview">
+                            <a href="#">
+                                <i class="fa fa-edit"></i> <span>Budget</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> 2014</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> 2015</a></li>
+                                <li><a href="#"><i class="fa fa-angle-double-right"></i> 2016</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <!-- /.sidebar -->
+            </aside>
+
+            <!-- Right side column. Contains the navbar and content of the page -->
+            <aside class="right-side">
+                <!-- Content Header (Page header)
+                <section class="content-header">
+                    <h1>
+                        General UI
+                        <small>Preview of UI elements</small>
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+                        <li class="active">Blank page</li>
+                    </ol>
+                </section>
+               -->
+                <!-- Main content -->
+                <section class="content">
+                    <!-- START ALERTS AND CALLOUTS -->
+                    <h2 class="page-header">iWatch Weekly Scorecard</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <i class="fa fa-info"></i>
+                                    <h3 class="box-title">Project Description</h3>
+                                    <div class="pull-right box-tools" >                                  
+	                                    <button type="button" class="btn btn-default btn-xs"  data-toggle="modal" data-target="#id-model-project"> 
+	                                    	<i class="fa fa-gear"></i>
+	                                    </button>
+                                    </div>
+                                </div><!-- /.box-header -->
+                                <div id = "project-description" class="box-body">
+ 								                              
+                        
+                                </div><!-- /.box-body -->
+								
+								<!-- Modal -->
+								<div class="modal fade" id="id-model-project" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								        <h4 class="modal-title" id="myModalLabel">Project Description</h4>
+								      </div>
+								      <div class="modal-body">
+								      
+								        
+                                        <textarea id="project-description-new" class="form-control" rows="3" placeholder="Enter ...">									
+										 </textarea>  
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								        <button id='save-project-description' type="button" class="btn btn-primary">Save</button>
+								      </div>
+								    </div>
+								  </div>
+								</div> <!--  end Modal -->
+								
+                            </div><!-- /.box -->
+                        </div><!-- /.col -->
+
+
+
+                        <div class="col-md-6">                         
+                               <div class="box box-info">
+                                <div class="box-info">
+                                    <table class="table table-condensed">
+                                        <tr>
+                                            <th>PCC:  <span class="badge bg-red">Red</span></th>
+                                            <th>SQM:  <span class="badge bg-yellow">Amber</span></th>
+                                            <th>TECH:  <span class="badge bg-green">Green</span></th> 
+                                            <th>Mar 23, 2014</th> 
+                                        </tr>
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->         
+                        
+                        </div><!-- /.col -->
+                        
+                        
+                         <div class="col-md-6">
+                            <div class="box box-info">
+                                <div class="box-body">  
+                                    <ul class="list-unstyled">
+                                        <li><b>Worksteam Owner:</b> Lorem ipsum</li>
+                                        <li><b>Project Manager:</b> Consectetur adipiscing</li>
+                                        <li><b>Developer:</b> Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus</li>
+                                        </ul>
+                                 
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- ./col -->   
+                    </div> <!-- /.row -->
+                    <!-- END ALERTS AND CALLOUTS -->
+ 
+ 
+   
+ 
+                    <div class="row">
+                        <div class="col-md-6">
+                              <div class="box box-info">
+                                <div class="box-header">
+                                    <i class="fa fa-text-width"></i>
+                                    <h3 class="box-title">Accomplishements</h3>
+                                     <div class="pull-right box-tools" >  
+                                        <button type="button" class="btn btn-default btn-xs"  data-toggle="modal" data-target="#id-model-project"> 
+	                                    	<i class="fa fa-gear"></i>
+	                                    </button>
+                                     </div>
+                                </div><!-- /.box-header -->
+                                <div class="box-body">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                    </ul>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                        </div><!-- /.col (left) -->
+                        <div class="col-md-6">
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <i class="fa fa-text-width"></i>
+                                    <h3 class="box-title">Upcoming Events</h3>
+                                </div><!-- /.box-header -->
+                                <div class="box-body">
+                                    <ul>
+                                        <li>Lorem ipsum dolor sit amet</li>
+                                        <li>Consectetur adipiscing elit</li>
+                                        <li>Integer molestie lorem at massa</li>
+                                        <li>Facilisis in pretium nisl aliquet</li>
+                                    </ul>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->                       
+                        </div><!-- /.col (right) -->
+                    </div><!-- /.row -->
+                    <!-- Start Milestone and Springs -->
+            <div class="row">
+                        <div class="col-md-6">
+                                    <div class="box box-info">
+                                <div class="box-header">
+                                    <h3 class="box-title">Milestones</h3>
+                                    <div class="pull-right box-tools" >                                  
+	                                    <button type="button" class="btn btn-default btn-xs"  data-toggle="modal" data-target="#modal-milestone"> 
+	                                    	<i class="fa fa-gear"></i>
+	                                    </button>
+                                    </div>                                   
+                                    
+                                </div><!-- /.box-header -->
+                                <div class="box-body no-padding">
+         
+                                
+                                    <table id = "milestone-table" class="table table-hover table-condensed">
+                                        <tr>
+                                            <th>Project</th>
+                                            <th>Date</th>
+                                            <th>RAG</th>
+                                            <th>Note</th>
+                                        </tr>
+                                        <tr  data-id="1" >
+                                            <td>Adhoc</td>
+                                            <td>Mar 14 2014</td>
+                                            <td><span class="badge bg-red">R</span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr data-id="2" >
+                                            <td>iWatch - UAT signed off</td>
+                                            <td>Mar 28 2014</td>
+                                            <td><span class="badge bg-yellow">A</span></td>
+                                            <td>UAT delay</td>
+                                        </tr>                                       
+                                         <tr data-id="3" >
+                                            <td>iWatch 1.0 - Production</td>
+                                            <td>Mar 30 2014</td>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td></td>
+                                        </tr>  
+                                    </table>
+                                </div><!-- /.box-body -->
+                                
+                               <!-- milestone modal -->
+								<div  id="modal-milestone"  class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+								  <div class="modal-dialog">
+								    <div class="modal-content">
+								      <div class="modal-header">
+								        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								        <h4 class="modal-title" id="myModalLabel">Milestone</h4>
+								      </div>
+								      <div id = "modal-milestone-body"class="modal-body">
+								            <label>Project</label>
+                                            <input id = 'project' type="text" class="form-control" placeholder="Enter ..."/>
+  											<label>Date</label>
+                                            <input id = 'date' type="text" class="form-control" placeholder="Enter ..."/>
+                                            <label>status</label>
+                                            <select class="form-control">
+                                                <option style="background-color: red;" >Red</option>
+                                                <option style="background-color: green;">Green</option>
+                                                <option style="background-color: amber;">Amber</option>
+                                            </select>                                         						        
+                                            <label>Note</label>
+                                            <input id = 'note' type="text" class="form-control" placeholder="Enter ..."/>	                                       								
+									  
+								      </div>
+								      <div class="modal-footer">
+								        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								        <button id='' type="button" class="btn btn-primary">Save</button>
+								      </div>
+								    </div>
+								  </div>
+								</div> <!--  end milestone modal -->                               
+                            </div><!-- /.box -->
+                            </div>
+
+  					 <div class="col-md-6">
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <h3 class="box-title">Spring 4</h3>
+                                </div><!-- /.box-header -->
+                                <div class="box-body no-padding">
+                                    <table class="table table-condensed">
+                                        <tr>
+                                            <th></th>
+                                            <th>Start</th>
+                                            <th>End</th>
+                                            <th>RAG</th>
+                                            <th>Note</th>
+                                        </tr>
+                                           <td>Dev</td>
+                                            <td>Mar 1 2014</td>
+                                            <td>Mar 14 2014</td>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>SQM</td>
+                                            <td>Mar 10 2014</td>
+                                            <td>Mar 14 2014</td>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>UAT</td>
+                                            <td>Mar 14 2014</td>
+                                            <td>Mar 16 2014</td>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prod</td>
+                                            <td>Mar 30 2014</td>
+                                            <td>Mar 31 2014</td>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td></td>
+                                        </tr>                                       
+   
+                                    </table>
+                                </div><!-- /.box-body -->
+                            </div><!-- /.box -->
+                       
+  						</div>
+                    </div><!-- /.row -->                   
+                    <!-- End Milestone and Springs -->
+                    <!-- Issue tickers -->
+                   <div class="row">
+                        <div class="col-xs-12">
+                            <div class="box box-info">
+                                <div class="box-header">
+                                    <h3 class="box-title">Critical Issuers, Risks and Dependencies</h3>
+                                    
+                                </div><!-- /.box-header -->
+                                <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover table-condensed">
+                                        <tr>
+                                        	<th>Status</th>
+                                            <th>Start</th>
+                                            <th>End</th>                                            
+                                            <th>Description</th>
+                                            <th>Owner</th>                                            
+                                        </tr>
+                                        <tr>
+                                            <td><span class="badge bg-red">R</span></td>
+                                            <td>3-1-14</td>
+                                            <td></td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td>fatback doner.</td>
+                                        </tr>
+                                         <tr>
+                                            <td><span class="badge bg-red">R</span></td>
+                                            <td>3-1-14</td>
+                                            <td></td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.</td>
+                                            <td>fatback doner.</td>
+                                        </tr>
+                                         <tr>
+                                            <td><span class="badge bg-green">G</span></td>
+                                            <td>3-1-14</td>
+                                            <td>3-20-14</td>
+                                            <td>Bacon ipsum dolor sit amet salami venison chicken flank fatback doner.  <b>Resolved</b> hicken flank fatback doner</td>
+                                            <td>fatback doner.</td>
+                                        </tr>
+     
+                                    </table>
+                                </div><!-- /.box-body -->
+                                
+  
+								
+                            </div><!-- /.box -->
+                        </div>
+                    </div>     
+                   <!-- End Issue Tickets -->
+          
+
+  
+
+                </section><!-- /.content -->
+            </aside><!-- /.right-side -->
+        </div><!-- ./wrapper -->
+
+
+        <!-- jQuery 2.0.2 -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+        <!-- Bootstrap -->
+        <script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- AdminLTE App -->
+        <script src="../../js/AdminLTE/app.js" type="text/javascript"></script>
+
+		
+		 
+
+    </body>
+</html>
