@@ -12,7 +12,8 @@ public class User {
 	private String name;
 	private String job;
 
-	private User.Address address;
+	private Address address;
+
 
 	public User() {
 	}
@@ -33,11 +34,11 @@ public class User {
 		this.job = job;
 	}
 
-	public User.Address getAddress() {
+	public Address getAddress() {
 		return address;
 	}
 
-	public void setAddress(User.Address address) {
+	public void setAddress(Address address) {
 		this.address = address;
 	}
 
@@ -57,29 +58,85 @@ public class User {
 		this.name = name;
 	}
 
+
+
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", job=" + job + ", address=" + address + "]";
+	}
+	
+	public static class City {
+		private String cityName;
+		private String areaCode;
+
+		public City() {
+		}
+
+		public City(String cityName, String areaCode) {
+			super();
+			this.cityName = cityName;
+			this.areaCode = areaCode;
+		}
+
+		public String getCityName() {
+			return cityName;
+		}
+
+		public void setCityName(String cityName) {
+			this.cityName = cityName;
+		}
+
+		public String getAreaCode() {
+			return areaCode;
+		}
+
+		public void setAreaCode(String areaCode) {
+			this.areaCode = areaCode;
+		}
+
+		@Override
+		public String toString() {
+			return "City [cityName=" + cityName + ", areaCode=" + areaCode + "]";
+		}
+
+	}	
+	
 	public static class Address {
 
 		private String street;
 
-		private String city;
+		//private City city;
 
 		public Address() {
 
 		}
-
-		public Address(String street, String city) {
+		public Address(String street ) {
 			super();
 			this.street = street;
-			this.city = city;
+			//this.city = city;
 		}
+		
 
-		public String getCity() {
+
+		
+		private City city ;
+
+		public City getCity() {
 			return city;
 		}
 
-		public void setCity(String city) {
+		public void setCity(City city) {
 			this.city = city;
-		}
+		}		
+		
+		
+		//		public City getCity() {
+//			return city;
+//		}
+//
+//		public void setCity(City city) {
+//			this.city = city;
+//		}
 
 		public String getStreet() {
 			return street;
@@ -91,14 +148,10 @@ public class User {
 
 		@Override
 		public String toString() {
-			return "Address [street=" + street + ", city=" + city + "]";
+			return "Address [street=" + street + ", city=" + "city" + "]";
 		}
 
-	}
 
-	@Override
-	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", job=" + job + ", address=" + address + "]";
-	}
+	}	
 
 }
